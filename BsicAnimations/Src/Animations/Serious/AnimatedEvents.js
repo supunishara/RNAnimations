@@ -27,7 +27,7 @@ class AnimatedEvents extends React.Component {
   render() {
     const backgroundInterpolate = this.state.animation.interpolate({
       inputRange: [0, 3000],
-      outputrange: ['rgb(255,99,71)', 'rgb(99,71,255)'],
+      outputRange: ['rgb(255,99,71)', 'rgb(99, 71,255)'],
     });
 
     const backgroundStyle = {
@@ -56,10 +56,7 @@ class AnimatedEvents extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    width: Width,
-    height: Height,
-    justifyContent: 'center',
-    alignItems: 'center',
+    flex: 1,
   },
   content: {
     height: 3000,
