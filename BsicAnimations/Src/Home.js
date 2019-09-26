@@ -41,6 +41,26 @@ class Home extends React.Component {
     this.props.navigation.navigate('AnimatedEvents');
   };
 
+  onDecayressed = () => {
+    this.props.navigation.navigate('Decay');
+  };
+
+  onParallelPressed = () => {
+    this.props.navigation.navigate('Parallel');
+  };
+
+  onSequencePressed = () => {
+    this.props.navigation.navigate('Sequence');
+  };
+
+  onStaggerPressed = () => {
+    this.props.navigation.navigate('Stagger');
+  };
+
+  onDelayPressed = () => {
+    this.props.navigation.navigate('Delay');
+  };
+
   render() {
     return (
       <View style={styles.container}>
@@ -95,7 +115,37 @@ class Home extends React.Component {
         <TouchableOpacity
           onPress={this.onAnimatedEventsressed}
           style={styles.singleButton}>
-          <Text>Animated Events</Text>
+          <Text> ScrollViewAnimated Events</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          onPress={this.onDecayressed}
+          style={styles.singleButton}>
+          <Text>Decay</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          onPress={this.onParallelPressed}
+          style={styles.singleButton}>
+          <Text>Parallel</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          onPress={this.onSequencePressed}
+          style={styles.singleButton}>
+          <Text>Sequence</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          onPress={this.onStaggerPressed}
+          style={styles.singleButton}>
+          <Text>Stagger</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          onPress={this.onDelayPressed}
+          style={styles.singleButton}>
+          <Text>Delay</Text>
         </TouchableOpacity>
       </View>
     );

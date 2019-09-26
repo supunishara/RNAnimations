@@ -11,6 +11,11 @@ import AbsoluteItems from './Animations/AbsoluteItems';
 import ColorInterpolation from './Animations/ColorInterpolation';
 import Rotation from './Animations/Rotation';
 import AnimatedEvents from './Animations/Serious/AnimatedEvents';
+import Decay from './Animations/Serious/Decay';
+import Parallel from './Animations/Serious/Parallel';
+import Sequence from './Animations/Serious/Sequence';
+import Stagger from './Animations/Serious/Stagger';
+import Delay from './Animations/Serious/Delay';
 
 //Serious Animations
 import Spring from './Animations/Serious/Spring';
@@ -45,6 +50,21 @@ const Project = createStackNavigator({
   },
   AnimatedEvents: {
     screen: AnimatedEvents,
+  },
+  Decay: {
+    screen: Decay,
+  },
+  Parallel: {
+    screen: Parallel,
+  },
+  Sequence: {
+    screen: Sequence,
+  },
+  Stagger: {
+    screen: Stagger,
+  },
+  Delay: {
+    screen: Delay,
   },
 });
 export default createAppContainer(Project);
